@@ -12,7 +12,7 @@ int main()
     auto const check = [](int x) {return x >= check_condition; };
 
     std::cout << "Check the number is >= " << check_condition
-        << " in vector v1 = {0,2,9,1,3,8,5,2,9} range from 'begin(v1)+1' to 'begin(v1)+8'"  << '\n';
+        << " in vector v1 = {0,2,9,1,3,8,5,2,9} range from 'begin(v1)+1' to 'begin(v1)+7'"  << '\n';
     // in subrange
     std::cout << "all_of: " << all_of (begin(v1)+1, begin(v1)+7, check) << '\n';  // true
     std::cout << "any_of: " << any_of (begin(v1)+1, begin(v1)+7, check) << '\n';  // true
